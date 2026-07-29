@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacroMate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="app-card">
+            <header class="app-header">
+                <img
+                    src="assets/macromate-logo.png"
+                    alt="MacroMate Logo"
+                    class="logo"
+                />
+
+                <p class="subtitle">
+                    Calculate your daily calorie and macronutrient targets.
+                </p>
+            </header>
+
+            <form id="macro-form" class="macro-form">
+                <div class="form-grid">
+                    <label>
+                        Age
+                        <input type="number" id="age" min="1" max="120" required>
+                    </label>
+
+                    <label>
+                        Sex
+                        <select id="sex" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Height (cm)
+                        <input type="number" id="height" min="1" step="0.1" required>
+                    </label>
+
+                    <label>
+                        Weight (kg)
+                        <input type="number" id="weight" min="1" step="0.1" required>
+                    </label>
+
+                    <label>
+                        Activity level
+                        <select id="activity" required>
+                            <option value="sedentary">Sedentary</option>
+                            <option value="light">Lightly active</option>
+                            <option value="moderate" selected>Moderately active</option>
+                            <option value="active">Very active</option>
+                            <option value="very_active">Extremely active</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Goal
+                        <select id="goal" required>
+                            <option value="lose">Lose weight</option>
+                            <option value="maintain" selected>Maintain weight</option>
+                            <option value="gain">Gain weight</option>
+                        </select>
+                    </label>
+                </div>
+
+                <button type="submit">Calculate macros</button>
+            </form>
+
+            <section id="results" class="results hidden">
+                <h2>Your daily targets</h2>
+
+                <div class="result-grid">
+                    <article class="result-card">
+                        <span>Calories</span>
+                        <strong id="calories">0</strong>
+                        <small>kcal</small>
+                    </article>
+
+                    <article class="result-card">
+                        <span>Protein</span>
+                        <strong id="protein">0</strong>
+                        <small>grams</small>
+                    </article>
+
+                    <article class="result-card">
+                        <span>Carbohydrates</span>
+                        <strong id="carbs">0</strong>
+                        <small>grams</small>
+                    </article>
+
+                    <article class="result-card">
+                        <span>Fat</span>
+                        <strong id="fat">0</strong>
+                        <small>grams</small>
+                    </article>
+                </div>
+            </section>
+
+            <p id="error-message" class="error-message"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
