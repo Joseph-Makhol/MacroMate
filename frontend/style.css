@@ -41,22 +41,8 @@ body {
     margin: 15px auto 25px;
 }
 
-.eyebrow {
-    color: #2f855a;
-    font-size: 0.85rem;
-    font-weight: bold;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-}
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
 .subtitle {
-    color: #4B5563;
+    color: #4b5563;
 }
 
 .form-grid {
@@ -99,10 +85,21 @@ button {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        opacity 0.2s ease;
 }
 
 button:hover {
     background: #276749;
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+    transform: none;
 }
 
 .results {
@@ -122,6 +119,7 @@ button:hover {
 
 .result-card {
     background: #f0fdf4;
+    border: 1px solid #dcfce7;
     border-radius: 16px;
     padding: 20px;
     text-align: center;
@@ -140,6 +138,60 @@ button:hover {
     color: #166534;
 }
 
+.coach-button {
+    margin-top: 24px;
+    background: #1f2937;
+}
+
+.coach-button:hover {
+    background: #111827;
+}
+
+.coach-section {
+    margin-top: 28px;
+    padding: 28px;
+    border: 1px solid #bbf7d0;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+    box-shadow: 0 12px 30px rgba(22, 101, 52, 0.08);
+}
+
+.coach-section h2 {
+    color: #166534;
+    margin-bottom: 10px;
+}
+
+#coach-summary {
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+#coach-advice {
+    display: grid;
+    gap: 12px;
+    padding-left: 22px;
+}
+
+#coach-advice li {
+    color: #1f2937;
+    line-height: 1.6;
+    padding-left: 4px;
+}
+
+#coach-advice li::marker {
+    color: #2f855a;
+}
+
+.coach-disclaimer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #bbf7d0;
+    color: #6b7280;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
 .hidden {
     display: none;
 }
@@ -152,8 +204,13 @@ button:hover {
 }
 
 @media (max-width: 700px) {
+    .page-shell {
+        padding: 20px 12px;
+    }
+
     .app-card {
         padding: 24px;
+        border-radius: 18px;
     }
 
     .form-grid,
@@ -161,7 +218,7 @@ button:hover {
         grid-template-columns: 1fr;
     }
 
-    h1 {
-        font-size: 2.2rem;
+    .coach-section {
+        padding: 22px;
     }
 }

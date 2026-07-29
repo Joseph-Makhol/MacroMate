@@ -23,6 +23,7 @@
 
             <form id="macro-form" class="macro-form">
                 <div class="form-grid">
+
                     <label>
                         Age
                         <input type="number" id="age" min="1" max="120" required>
@@ -65,15 +66,21 @@
                             <option value="gain">Gain weight</option>
                         </select>
                     </label>
+
                 </div>
 
-                <button type="submit">Calculate macros</button>
+                <button id="calculate-btn" type="submit">
+                    Calculate Macros
+                </button>
+
             </form>
 
             <section id="results" class="results hidden">
-                <h2>Your daily targets</h2>
+
+                <h2>Your Daily Targets</h2>
 
                 <div class="result-grid">
+
                     <article class="result-card">
                         <span>Calories</span>
                         <strong id="calories">0</strong>
@@ -97,10 +104,29 @@
                         <strong id="fat">0</strong>
                         <small>grams</small>
                     </article>
+
                 </div>
+
+                <button id="coach-btn" class="coach-button">
+                    ✨ Get Nutrition Advice
+                </button>
+
+            </section>
+
+            <section id="coach-section" class="coach-section hidden">
+
+                <h2 id="coach-title"></h2>
+
+                <p id="coach-summary"></p>
+
+                <ul id="coach-advice"></ul>
+
+                <p id="coach-disclaimer" class="coach-disclaimer"></p>
+
             </section>
 
             <p id="error-message" class="error-message"></p>
+
         </section>
     </main>
 
