@@ -185,41 +185,6 @@ POST http://127.0.0.1:8000/ai-coach
 
 --------------------------------------------------
 
-## Developer Notes
-
-### Running the Project
-
-1. Open the project in VS Code.
-
-2. Activate the virtual environment:
-
-```powershell
-.\.venv\Scripts\Activate
-```
-
-3. Start the backend:
-
-```powershell
-python -m uvicorn backend.main:app --reload
-```
-(Optional) Once the backend is running, open your browser and go to: http://127.0.0.1:8000/docs
-
-4. Open:
-
-```
-frontend/index.html
-```
-
-using the Live Server extension.
-
-5. To stop the backend:
-
-```
-Ctrl + C
-```
-
---------------------------------------------------
-
 ## Future Improvements
 
 - User authentication
