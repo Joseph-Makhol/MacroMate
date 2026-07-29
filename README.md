@@ -34,7 +34,7 @@ The application estimates daily calorie requirements, calculates macronutrient t
 
 ### Nutrition Coach
 
-The nutrition coach provides:
+The nutrition coach provides personalized nutrition guidance using rule-based recommendations generated from the user's calculated calorie and macronutrient targets.
 
 ### Personalized Recommendations
 - Goal-specific nutrition guidance

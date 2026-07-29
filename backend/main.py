@@ -20,23 +20,23 @@ app.add_middleware(
 
 
 class MacroRequest(BaseModel):
-    age: int = Field(gt=0, le=120)
+    age: int = Field(ge=1, le=100)
     sex: str
-    height_cm: float = Field(gt=0)
-    weight_kg: float = Field(gt=0)
+    height_cm: float = Field(ge=40, le=250)
+    weight_kg: float = Field(ge=2, le=300)
     activity_level: str
     goal: str
 
 
 class CoachRequest(BaseModel):
-    age: int = Field(gt=0, le=120)
-    weight_kg: float = Field(gt=0)
+    age: int = Field(ge=1, le=100)
+    weight_kg: float = Field(ge=2, le=300)
     goal: str
     calories: int = Field(gt=0)
     protein_grams: int = Field(ge=0)
     carbs_grams: int = Field(ge=0)
     fat_grams: int = Field(ge=0)
-
+    
 
 ACTIVITY_MULTIPLIERS = {
     "sedentary": 1.2,

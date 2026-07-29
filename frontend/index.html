@@ -9,6 +9,7 @@
 <body>
     <main class="page-shell">
         <section class="app-card">
+
             <header class="app-header">
                 <img
                     src="assets/macromate-logo.png"
@@ -22,15 +23,22 @@
             </header>
 
             <form id="macro-form" class="macro-form">
+
                 <div class="form-grid">
 
                     <label>
                         Age
-                        <input type="number" id="age" min="1" max="120" required>
+                        <input
+                            type="number"
+                            id="age"
+                            min="1"
+                            max="100"
+                            required
+                        >
                     </label>
 
                     <label>
-                        Sex
+                        Gender
                         <select id="sex" required>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -39,12 +47,26 @@
 
                     <label>
                         Height (cm)
-                        <input type="number" id="height" min="1" step="0.1" required>
+                        <input
+                            type="number"
+                            id="height"
+                            min="40"
+                            max="250"
+                            step="0.1"
+                            required
+                        >
                     </label>
 
                     <label>
                         Weight (kg)
-                        <input type="number" id="weight" min="1" step="0.1" required>
+                        <input
+                            type="number"
+                            id="weight"
+                            min="2"
+                            max="300"
+                            step="0.1"
+                            required
+                        >
                     </label>
 
                     <label>
