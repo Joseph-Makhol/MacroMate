@@ -13,12 +13,12 @@ The project includes a Python FastAPI backend, REST API, and a responsive web da
 Planning daily nutrition can be difficult without knowing how many calories and macronutrients your body requires.
 
 This project calculates personalized nutrition targets by using:
-- age
-- sex
-- height
-- weight
-- activity level
-- fitness goal
+- Age
+- Gender
+- Height
+- Weight
+- Activity Level
+- Fitness Goal
 
 The application estimates daily calorie requirements, calculates macronutrient targets, and provides personalized nutrition recommendations based on the user's goals.
 
