@@ -114,23 +114,23 @@ The application exposes two REST API endpoints:
 
 ### Dashboard
 
-![Dashboard](Screenshots/macromate-dashboard.png)
+![Dashboard](screenshots/macromate-dashboard.png)
 
 ### Nutrition Coach
 
-![Nutrition Coach](Screenshots/app-results.png)
+![Nutrition Coach](screenshots/app-results.png)
 
 ### API Documentation
 
-![Swagger UI](Screenshots/api-docs.png)
+![Swagger UI](screenshots/api-docs.png)
 
 ### Macro Calculation API
 
-![Macro Calculation](Screenshots/api-calculation-success.png)
+![Macro Calculation](screenshots/api-calculation-success.png)
 
 ### Backend API Running
 
-![Backend API](Screenshots/backend-api-running.png)
+![Backend API](screenshots/backend-api-running.png)
 --------------------------------------------------
 
 ## How To Run
